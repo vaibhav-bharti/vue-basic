@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Vue Basic</title>
+	<script src="https://unpkg.com/vue"></script>
+</head>
+<body>
+<div id="app">
+	{{msg}}
+</div>
+<div id="app-2">
+<span v-bind:title='msg'>
+Hover me!	
+</span>
+</div>
+<div id="app-3" v-if="seen">
+<span>Now you can see me!</span>
+</div>
+<div id="app-4" v-if=colors.length>
+	<ol>
+		<colors v-for="c in colors"
+		v-bind:value="c"
+		v-bind:key="c">
+			
+		</colors>
+<!-- 		<li v-for="c in colors">{{c}}</li>
+ -->	</ol>
+</div>
+<div id="app-5">
+	<p>{{message}}</p>
+	<button v-on:click="reverseMsg">Reverse Message</button>
+	
+</div>
+
+<div id="app-6">
+	<p>{{msg}}</p>
+<input v-model="msg">	
+</div>
+</body>
+</html>
+<script src="client.js"></script>
