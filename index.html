@@ -35,7 +35,27 @@ Hover me!
 <div id="app-6">
 	<p>{{msg}}</p>
 <input v-model="msg">	
+<!-- <div v-html="rawHtml"></div> -->
+</div>
+<div id="app-7">
+	{{first_name}} | {{last_name}}
+	<br>
+	{{fullName}}
+
+</div>
+<div id="app-8">
+	<p>
+		Ask a yes/no question:
+		<input v-model="question">
+	</p>
+	<p>{{answer}}</p>
 </div>
 </body>
 </html>
+<!-- Since there is already a rich ecosystem of ajax libraries    -->
+<!-- and collections of general-purpose utility methods, Vue core -->
+<!-- is able to remain small by not reinventing them. This also   -->
+<!-- gives you the freedom to use what you're familiar with. -->
+<script src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js"></script>
 <script src="client.js"></script>
