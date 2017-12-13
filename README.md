@@ -1,3 +1,4 @@
 # vue-basic
 
-A simple repo for basic of vue.js.
+A simple repo the represent the basics of Vue.js.
+.
